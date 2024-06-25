@@ -1,0 +1,219 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh;
+    width: 100vw;
+    font-family: HGVF; */
+    font-size: 18px;
+    font-family: HankenGrotesk;
+}
+:root{
+    /*Primary Colors*/
+  --Lightred: hsl(0, 100%, 67%);
+  --Orangeyyellow: hsl(39, 100%, 56%);
+  --Greenteal: hsl(166, 100%, 37%);
+  --Cobaltblue: hsl(234, 85%, 45%);
+  /*Gradients*/
+  --Lightslateblue: hsl(252, 100%, 67%); /*background*/
+  --Lightroyalblue: hsl(241, 81%, 54%);  /*background*/
+  --Violetblue: hsla(256, 72%, 46%, 1); /*circle*/
+  --Persianblue: hsla(241, 72%, 46%, 0); /*circle*/
+  /*Neutrals*/
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+}
+@font-face {
+    font-family: HankenGrotesk;
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+.main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+ 
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 737px;
+    height: 512px;
+    background-color: var(--White);
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px 12px hsla(221, 100%, 96%, 0.6);
+}
+.card-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+}
+.circle-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg,hsla(256, 72%, 46%, 0.7),hsla(241, 72%, 46%, 0));
+}
+h1{
+    color: var(--Paleblue);
+    opacity: 75%;
+    font-size: 24px;
+    font-weight: 600;
+}
+.circle-header{
+    color: var(--White);
+    font-size: 4.5rem;
+    margin-bottom: -10px;
+}
+.circle-text{
+    color: var(--Paleblue);
+    opacity: 50%;
+}
+.card-left-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.card-left-bottom-text{
+    color: var(--White);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.card-left-bottom-paragraph{
+    color: var(--Paleblue);
+    opacity: 75%;
+    width: 75%;
+    text-align: center;
+
+}
+.card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card-right-header{
+    text-align: left;
+    width: 80%;
+    opacity: 80%;
+}
+.table-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    gap: 16px;
+
+}
+.table-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+
+}
+.row-left{
+    display: flex;
+    gap: 10px;
+}
+.row1{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.row2{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.row3{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.row4{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.row-title1{
+    color: var(--Lightred);
+}
+.row-title2{
+    color: var(--Orangeyyellow);
+}
+.row-title3{
+    color: var(--Greenteal);
+}
+.row-title4{
+    color: var(--Cobaltblue);
+}
+.row-result{
+    font-weight: 600;
+}
+.row-span{
+    opacity: 40%;
+    margin-left: 2px;
+}
+button{
+    background-color: var(--Darkgrayblue);
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: var(--White);
+    font-size: large;
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+  
+  @media screen and (max-width: 760px) {
+    .card{
+        grid-template-columns: 1fr;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+    }
+    .circle-box{
+        height: 140px;
+        width: 140px;
+        gap: 12px;
+
+    }
+    .circle-header{
+        font-size: 3.5rem;
+    }
+    .card-left{
+        padding: 2rem 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .card-left-bottom-text{
+        font-size: 1.5rem;
+    }
+    .card-left-bottom-paragraph{
+        font-size: 1rem;
+    }
+    .card-right-header{
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    button{
+        margin-bottom: 1.1rem;
+    }
+  }

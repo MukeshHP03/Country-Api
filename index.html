@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+
+  <body>
+    <main class="main-page">
+      <div class="card">
+        <div class="card-left">
+          <h1>Your Result</h1>
+          <div class="circle-box">  
+            <h2 class="circle-header">76</h2>
+            <p class="circle-text">of 100</p>
+          </div>
+          <div class="card-left-bottom">
+            <p class="card-left-bottom-text">Great</p>
+            <p class="card-left-bottom-paragraph">
+              You scored higher than 65% of the people who have taken these tests.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card Left Ends Here -->
+
+        <div class="card-right">
+          <h2 class="card-right-header">Summary</h2>
+          <div class="table-container">
+            <div class="table-row row1">
+              <div class="row-left">
+                <img
+                  class="row-image"
+                  src="./assets/images/icon-reaction.svg"
+                  alt="reaction image"
+                />
+                <p class="row-title1">Reaction</p>
+              </div>
+              <div class="row-right">
+                <p class="row-result">80<span class="row-span">/ 100</span></p>
+              </div>
+            </div>
+            <div class="table-row row2">
+              <div class="row-left">
+                <img
+                  class="row-image"
+                  src="./assets/images/icon-memory.svg"
+                  alt="memory image"
+                />
+                <p class="row-title2">Memory</p>
+              </div>
+              <div class="row-right">
+                <p class="row-result">92<span class="row-span">/ 100</span></p>
+              </div>
+            </div>
+            <div class="table-row row3">
+              <div class="row-left">
+                <img
+                  class="row-image"
+                  src="./assets/images/icon-verbal.svg"
+                  alt="verbal-image"
+                />
+                <p class="row-title3">Verbal</p>
+              </div>
+              <div class="row-right">
+                <p class="row-result">61<span class="row-span">/ 100</span></p>
+              </div>
+            </div>
+            <div class="table-row row4">
+              <div class="row-left">
+                <img
+                  class="row-image"
+                  src="./assets/images/icon-visual.svg"
+                  alt="visual-image"
+                />
+                <p class="row-title4">Visual</p>
+              </div>
+              <div class="row-right">
+                <p class="row-result">72<span class="row-span">/ 100</span></p>
+              </div>
+            </div>
+          </div>
+          <button class="Continue"> 
+            Continue
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
